@@ -1,0 +1,5 @@
+[console_scripts]
+sip-api = web_api:main
+sip-scheduler = scheduler:run_scheduler
+sip-test = test_system:main
+sip-trading = main:main

@@ -1,0 +1,161 @@
+Metadata-Version: 2.4
+Name: sip-algo-trading
+Version: 0.1.0
+Summary: SIP Algorithmic Trading System for Indian Stock Markets
+Author-email: Your Name <your.email@example.com>
+License: MIT
+Project-URL: Homepage, https://github.com/ItsMePatidar/sip-algo-trading
+Project-URL: Repository, https://github.com/ItsMePatidar/sip-algo-trading
+Project-URL: Issues, https://github.com/ItsMePatidar/sip-algo-trading/issues
+Keywords: algorithmic trading,SIP,systematic investment plan,indian stock market,trading bot
+Classifier: Development Status :: 3 - Alpha
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Requires-Python: >=3.8
+Description-Content-Type: text/markdown
+Requires-Dist: yfinance>=0.2.18
+Requires-Dist: pandas>=2.0.3
+Requires-Dist: numpy>=1.24.3
+Requires-Dist: pytz>=2023.3
+Requires-Dist: requests>=2.31.0
+Requires-Dist: python-dotenv>=1.0.0
+Requires-Dist: SQLAlchemy>=2.0.19
+Requires-Dist: fastapi>=0.103.1
+Requires-Dist: uvicorn>=0.23.2
+Requires-Dist: pydantic>=2.3.0
+Requires-Dist: celery>=5.3.1
+Requires-Dist: redis>=4.6.0
+Requires-Dist: schedule>=1.2.0
+Requires-Dist: structlog>=23.1.0
+Requires-Dist: httpx>=0.24.1
+Requires-Dist: pyyaml>=6.0.1
+Requires-Dist: marshmallow>=3.20.1
+Requires-Dist: python-dateutil>=2.8.2
+Requires-Dist: click>=8.1.7
+Requires-Dist: tqdm>=4.66.1
+Provides-Extra: dev
+Requires-Dist: pytest>=7.4.0; extra == "dev"
+Requires-Dist: pytest-asyncio>=0.21.1; extra == "dev"
+Requires-Dist: pytest-cov>=4.1.0; extra == "dev"
+Requires-Dist: black>=23.7.0; extra == "dev"
+Requires-Dist: flake8>=6.0.0; extra == "dev"
+Requires-Dist: isort>=5.12.0; extra == "dev"
+Requires-Dist: mypy>=1.5.1; extra == "dev"
+Requires-Dist: pre-commit>=3.3.3; extra == "dev"
+Provides-Extra: zerodha
+Requires-Dist: kiteconnect>=4.0.0; extra == "zerodha"
+Provides-Extra: analysis
+Requires-Dist: scipy>=1.11.1; extra == "analysis"
+Requires-Dist: scikit-learn>=1.3.0; extra == "analysis"
+Requires-Dist: matplotlib>=3.7.2; extra == "analysis"
+Requires-Dist: seaborn>=0.12.2; extra == "analysis"
+Requires-Dist: jupyter>=1.0.0; extra == "analysis"
+Requires-Dist: plotly>=5.15.0; extra == "analysis"
+
+# SIP Algorithmic Trading System
+
+A comprehensive algorithmic trading system for Systematic Investment Plans (SIPs) in the Indian stock market.
+
+## Features
+
+- **Automated SIP Execution**: Schedule and execute SIP investments automatically
+- **Multiple Brokers Support**: Zerodha integration with extensible broker interface
+- **Real-time Data**: Market data from Yahoo Finance and broker APIs
+- **Risk Management**: Built-in risk controls and position limits
+- **Web API**: REST API for monitoring and control
+- **Database Storage**: SQLite for development, PostgreSQL for production
+- **Backtesting**: Test strategies on historical data
+- **Monitoring**: Real-time order and portfolio monitoring
+
+## Quick Start
+
+### Installation
+
+```bash
+# Clone the repository
+git clone https://github.com/ItsMePatidar/sip-algo-trading.git
+cd sip-algo-trading
+
+# Create virtual environment
+python -m venv venv
+source venv/bin/activate  # On Windows: venv\Scripts\activate
+
+# Install the package
+pip install -e .
+```
+
+### Configuration
+
+1. Copy the environment template:
+```bash
+cp .env.template .env
+```
+
+2. Update `.env` with your broker credentials:
+```
+ZERODHA_API_KEY=your_api_key_here
+ZERODHA_API_SECRET=your_api_secret_here
+```
+
+3. Update `config.json` with your SIP preferences
+
+### Running the System
+
+```bash
+# Run tests
+sip-test
+
+# Start the main system
+sip-trading
+
+# Start the scheduler
+sip-scheduler
+
+# Start the web API
+sip-api
+```
+
+## Project Structure
+
+```
+sip-algo-trading/
+├── setup.py                    # Package configuration
+├── requirements.txt            # Dependencies
+├── main.py                     # Main application
+├── scheduler.py                # SIP scheduler
+├── web_api.py                  # Web API
+├── config/                     # Configuration modules
+├── data/                       # Data handling
+├── brokers/                    # Broker integrations
+├── orders/                     # Order management
+└── utils/                      # Utilities
+```
+
+## Documentation
+
+- [Installation Guide](docs/installation.md)
+- [Configuration](docs/configuration.md)
+- [API Documentation](docs/api.md)
+- [Strategy Development](docs/strategies.md)
+
+## Contributing
+
+1. Fork the repository
+2. Create a feature branch
+3. Make your changes
+4. Run tests
+5. Submit a pull request
+
+## License
+
+This project is licensed under the MIT License - see the LICENSE file for details.
+
+## Disclaimer
+
+This software is for educational purposes only. Use at your own risk. The authors are not responsible for any financial losses.

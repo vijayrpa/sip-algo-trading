@@ -1,0 +1,326 @@
+2025-07-17 20:56:01,153 - __main__ - INFO - ============================================================
+2025-07-17 20:56:01,153 - __main__ - INFO - SIP Algorithmic Trading System - Starting Up
+2025-07-17 20:56:01,153 - __main__ - INFO - ============================================================
+2025-07-17 20:56:01,153 - __main__ - INFO - Initializing database...
+2025-07-17 20:56:01,155 - data.storage - INFO - Database initialized successfully
+2025-07-17 20:56:01,155 - __main__ - INFO - ✓ Database initialized successfully
+2025-07-17 20:56:01,155 - __main__ - INFO - Initializing market data provider...
+2025-07-17 20:56:01,155 - __main__ - INFO - ✓ Market data provider initialized
+2025-07-17 20:56:01,155 - __main__ - INFO - Initializing broker connection...
+2025-07-17 20:56:01,155 - brokers.zerodha_broker - INFO - Connecting to Zerodha API...
+2025-07-17 20:56:01,155 - brokers.zerodha_broker - ERROR - API key or secret not provided
+2025-07-17 20:56:01,155 - __main__ - ERROR - ✗ Failed to connect to broker
+2025-07-17 20:58:54,239 - __main__ - INFO - ============================================================
+2025-07-17 20:58:54,240 - __main__ - INFO - SIP Algorithmic Trading System - Starting Up
+2025-07-17 20:58:54,240 - __main__ - INFO - ============================================================
+2025-07-17 20:58:54,240 - __main__ - INFO - Initializing database...
+2025-07-17 20:58:54,240 - data.storage - INFO - Database initialized successfully
+2025-07-17 20:58:54,240 - __main__ - INFO - ✓ Database initialized successfully
+2025-07-17 20:58:54,240 - __main__ - INFO - Initializing market data provider...
+2025-07-17 20:58:54,240 - __main__ - INFO - ✓ Market data provider initialized
+2025-07-17 20:58:54,240 - __main__ - INFO - Initializing broker connection...
+2025-07-17 20:58:54,240 - brokers.zerodha_broker - INFO - Connecting to Zerodha API...
+2025-07-17 20:58:54,240 - brokers.zerodha_broker - ERROR - API key or secret not provided
+2025-07-17 20:58:54,240 - __main__ - ERROR - ✗ Failed to connect to broker
+2025-07-17 20:59:16,731 - __main__ - INFO - ============================================================
+2025-07-17 20:59:16,731 - __main__ - INFO - SIP Algorithmic Trading System - Starting Up
+2025-07-17 20:59:16,731 - __main__ - INFO - ============================================================
+2025-07-17 20:59:16,731 - __main__ - INFO - Initializing database...
+2025-07-17 20:59:16,732 - data.storage - INFO - Database initialized successfully
+2025-07-17 20:59:16,732 - __main__ - INFO - ✓ Database initialized successfully
+2025-07-17 20:59:16,732 - __main__ - INFO - Initializing market data provider...
+2025-07-17 20:59:16,732 - __main__ - INFO - ✓ Market data provider initialized
+2025-07-17 20:59:16,732 - __main__ - INFO - Initializing broker connection...
+2025-07-17 20:59:16,732 - brokers.zerodha_broker - INFO - Connecting to Zerodha API...
+2025-07-17 20:59:16,732 - brokers.zerodha_broker - ERROR - API key or secret not provided
+2025-07-17 20:59:16,732 - __main__ - ERROR - ✗ Failed to connect to broker
+2025-07-17 21:02:09,057 - __main__ - INFO - ============================================================
+2025-07-17 21:02:09,057 - __main__ - INFO - SIP Algorithmic Trading System - Starting Up
+2025-07-17 21:02:09,057 - __main__ - INFO - ============================================================
+2025-07-17 21:02:09,057 - __main__ - INFO - Initializing database...
+2025-07-17 21:02:09,058 - data.storage - INFO - Database initialized successfully
+2025-07-17 21:02:09,058 - __main__ - INFO - ✓ Database initialized successfully
+2025-07-17 21:02:09,058 - __main__ - INFO - Initializing market data provider...
+2025-07-17 21:02:09,058 - __main__ - INFO - ✓ Market data provider initialized
+2025-07-17 21:02:09,058 - __main__ - INFO - Initializing broker connection...
+2025-07-17 21:02:09,058 - brokers.zerodha_broker - INFO - Zerodha broker initialized in demo mode
+2025-07-17 21:02:09,058 - brokers.zerodha_broker - INFO - Connecting to Zerodha API...
+2025-07-17 21:02:09,058 - brokers.zerodha_broker - INFO - Running in DEMO mode - using mock broker
+2025-07-17 21:02:09,058 - __main__ - INFO - ✓ Broker connected successfully
+2025-07-17 21:02:09,058 - __main__ - INFO - Initializing order manager...
+2025-07-17 21:02:09,058 - __main__ - INFO - ✓ Order manager initialized
+2025-07-17 21:02:09,058 - __main__ - INFO - Account balance: ₹100000.00
+2025-07-17 21:02:09,058 - __main__ - INFO - Current positions: 2
+2025-07-17 21:02:09,058 - __main__ - INFO - ✓ System initialization completed successfully
+2025-07-17 21:02:09,058 - __main__ - INFO - Running in demonstration mode...
+2025-07-17 21:02:09,058 - __main__ - INFO - Updating market data for 3 symbols...
+2025-07-17 21:02:09,058 - __main__ - INFO - Fetching data for NIFTY50...
+2025-07-17 21:02:10,041 - data.storage - INFO - Stored 5 records for NIFTY50
+2025-07-17 21:02:10,041 - data.market_data - INFO - Fetched 5 records for NIFTY50
+2025-07-17 21:02:10,041 - __main__ - INFO - ✓ Updated 5 records for NIFTY50
+2025-07-17 21:02:10,542 - __main__ - INFO - Fetching data for RELIANCE...
+2025-07-17 21:02:10,909 - data.storage - INFO - Stored 5 records for RELIANCE
+2025-07-17 21:02:10,909 - data.market_data - INFO - Fetched 5 records for RELIANCE
+2025-07-17 21:02:10,910 - __main__ - INFO - ✓ Updated 5 records for RELIANCE
+2025-07-17 21:02:11,415 - __main__ - INFO - Fetching data for TCS...
+2025-07-17 21:02:11,682 - data.storage - INFO - Stored 5 records for TCS
+2025-07-17 21:02:11,682 - data.market_data - INFO - Fetched 5 records for TCS
+2025-07-17 21:02:11,682 - __main__ - INFO - ✓ Updated 5 records for TCS
+2025-07-17 21:02:12,183 - __main__ - INFO - ✓ Market data update completed
+2025-07-17 21:02:12,184 - __main__ - INFO - Fetching current prices for 3 symbols...
+2025-07-17 21:02:12,563 - data.market_data - INFO - Current price for NIFTY50: 25111.45
+2025-07-17 21:02:12,953 - data.market_data - INFO - Current price for RELIANCE: 1476.4
+2025-07-17 21:02:13,340 - data.market_data - INFO - Current price for TCS: 3209.2
+2025-07-17 21:02:13,446 - __main__ - INFO -   NIFTY50: ₹25111.45
+2025-07-17 21:02:13,447 - __main__ - INFO -   RELIANCE: ₹1476.40
+2025-07-17 21:02:13,447 - __main__ - INFO -   TCS: ₹3209.20
+2025-07-17 21:02:13,447 - __main__ - INFO - Executing SIP strategy...
+2025-07-17 21:02:13,447 - __main__ - INFO - Market is closed, skipping SIP execution
+2025-07-17 21:02:13,447 - __main__ - INFO - Portfolio Summary:
+2025-07-17 21:02:13,447 - __main__ - INFO - ----------------------------------------
+2025-07-17 21:02:13,448 - __main__ - INFO - Cash Balance: ₹100000.00
+2025-07-17 21:02:13,448 - __main__ - INFO - Used Margin: ₹25000.00
+2025-07-17 21:02:13,448 - __main__ - INFO - Holdings: 2 positions
+2025-07-17 21:02:13,448 - __main__ - INFO -   {'symbol': 'RELIANCE', 'quantity': 10, 'average_price': 2650.0, 'current_price': 2680.0, 'pnl': 300.0}
+2025-07-17 21:02:13,448 - __main__ - INFO -   {'symbol': 'TCS', 'quantity': 5, 'average_price': 3500.0, 'current_price': 3520.0, 'pnl': 100.0}
+2025-07-17 21:02:13,448 - __main__ - INFO - No active orders
+2025-07-17 21:02:13,448 - __main__ - INFO - ✓ System execution completed successfully
+2025-07-17 21:02:13,448 - __main__ - INFO - Cleaning up system resources...
+2025-07-17 21:02:13,448 - __main__ - INFO - ✓ Cleanup completed
+2025-07-17 21:08:57,682 - test_logger - INFO - Test log message
+2025-07-17 21:08:57,682 - data.storage - INFO - Database initialized successfully
+2025-07-17 21:08:57,682 - brokers.zerodha_broker - INFO - Zerodha broker initialized in demo mode
+2025-07-17 21:08:57,682 - brokers.zerodha_broker - INFO - Connecting to Zerodha API...
+2025-07-17 21:08:57,682 - brokers.zerodha_broker - INFO - Running in DEMO mode - using mock broker
+2025-07-17 21:08:57,780 - data.market_data - INFO - Current price for RELIANCE: 1476.4
+2025-07-17 21:08:57,919 - data.market_data - INFO - Current price for TCS: 3209.2
+2025-07-17 21:11:25,929 - test_logger - INFO - Test log message
+2025-07-17 21:11:25,929 - data.storage - INFO - Database initialized successfully
+2025-07-17 21:11:25,929 - brokers.zerodha_broker - INFO - Zerodha broker initialized in demo mode
+2025-07-17 21:11:25,929 - brokers.zerodha_broker - INFO - Connecting to Zerodha API...
+2025-07-17 21:11:25,929 - brokers.zerodha_broker - INFO - Running in DEMO mode - using mock broker
+2025-07-17 21:11:26,042 - data.market_data - INFO - Current price for RELIANCE: 1476.4
+2025-07-17 21:11:26,217 - data.market_data - INFO - Current price for TCS: 3209.2
+2025-07-17 21:13:41,574 - __main__ - INFO - ============================================================
+2025-07-17 21:13:41,574 - __main__ - INFO - SIP Algorithmic Trading System - Starting Up
+2025-07-17 21:13:41,574 - __main__ - INFO - ============================================================
+2025-07-17 21:13:41,574 - __main__ - INFO - Initializing database...
+2025-07-17 21:13:41,575 - data.storage - INFO - Database initialized successfully
+2025-07-17 21:13:41,575 - __main__ - INFO - ✓ Database initialized successfully
+2025-07-17 21:13:41,575 - __main__ - INFO - Initializing market data provider...
+2025-07-17 21:13:41,575 - __main__ - INFO - ✓ Market data provider initialized
+2025-07-17 21:13:41,575 - __main__ - INFO - Initializing broker connection...
+2025-07-17 21:13:41,575 - brokers.zerodha_broker - INFO - Zerodha broker initialized in demo mode
+2025-07-17 21:13:41,575 - brokers.zerodha_broker - INFO - Connecting to Zerodha API...
+2025-07-17 21:13:41,575 - brokers.zerodha_broker - INFO - Running in DEMO mode - using mock broker
+2025-07-17 21:13:41,575 - __main__ - INFO - ✓ Broker connected successfully
+2025-07-17 21:13:41,575 - __main__ - INFO - Initializing order manager...
+2025-07-17 21:13:41,575 - __main__ - INFO - ✓ Order manager initialized
+2025-07-17 21:13:41,575 - __main__ - INFO - Account balance: ₹100000.00
+2025-07-17 21:13:41,575 - __main__ - INFO - Current positions: 2
+2025-07-17 21:13:41,575 - __main__ - INFO - ✓ System initialization completed successfully
+2025-07-17 21:13:41,575 - __main__ - INFO - Running in demonstration mode...
+2025-07-17 21:13:41,575 - __main__ - INFO - Updating market data for 3 symbols...
+2025-07-17 21:13:41,575 - __main__ - INFO - Fetching data for NIFTY50...
+2025-07-17 21:13:42,284 - data.storage - INFO - Stored 5 records for NIFTY50
+2025-07-17 21:13:42,284 - data.market_data - INFO - Fetched 5 records for NIFTY50
+2025-07-17 21:13:42,284 - __main__ - INFO - ✓ Updated 5 records for NIFTY50
+2025-07-17 21:13:42,790 - __main__ - INFO - Fetching data for RELIANCE...
+2025-07-17 21:13:42,928 - data.storage - INFO - Stored 5 records for RELIANCE
+2025-07-17 21:13:42,928 - data.market_data - INFO - Fetched 5 records for RELIANCE
+2025-07-17 21:13:42,928 - __main__ - INFO - ✓ Updated 5 records for RELIANCE
+2025-07-17 21:13:43,433 - __main__ - INFO - Fetching data for TCS...
+2025-07-17 21:13:43,636 - data.storage - INFO - Stored 5 records for TCS
+2025-07-17 21:13:43,636 - data.market_data - INFO - Fetched 5 records for TCS
+2025-07-17 21:13:43,636 - __main__ - INFO - ✓ Updated 5 records for TCS
+2025-07-17 21:13:44,141 - __main__ - INFO - ✓ Market data update completed
+2025-07-17 21:13:44,142 - __main__ - INFO - Fetching current prices for 3 symbols...
+2025-07-17 21:13:44,379 - data.market_data - INFO - Current price for NIFTY50: 25111.45
+2025-07-17 21:13:44,733 - data.market_data - INFO - Current price for RELIANCE: 1476.4
+2025-07-17 21:13:45,227 - data.market_data - INFO - Current price for TCS: 3209.2
+2025-07-17 21:13:45,332 - __main__ - INFO -   NIFTY50: ₹25111.45
+2025-07-17 21:13:45,332 - __main__ - INFO -   RELIANCE: ₹1476.40
+2025-07-17 21:13:45,333 - __main__ - INFO -   TCS: ₹3209.20
+2025-07-17 21:13:45,333 - __main__ - INFO - Executing SIP strategy...
+2025-07-17 21:13:45,333 - __main__ - INFO - Market is closed, skipping SIP execution
+2025-07-17 21:13:45,333 - __main__ - INFO - Portfolio Summary:
+2025-07-17 21:13:45,333 - __main__ - INFO - ----------------------------------------
+2025-07-17 21:13:45,334 - __main__ - INFO - Cash Balance: ₹100000.00
+2025-07-17 21:13:45,334 - __main__ - INFO - Used Margin: ₹25000.00
+2025-07-17 21:13:45,334 - __main__ - INFO - Holdings: 2 positions
+2025-07-17 21:13:45,334 - __main__ - INFO -   {'symbol': 'RELIANCE', 'quantity': 10, 'average_price': 2650.0, 'current_price': 2680.0, 'pnl': 300.0}
+2025-07-17 21:13:45,334 - __main__ - INFO -   {'symbol': 'TCS', 'quantity': 5, 'average_price': 3500.0, 'current_price': 3520.0, 'pnl': 100.0}
+2025-07-17 21:13:45,334 - __main__ - INFO - No active orders
+2025-07-17 21:13:45,334 - __main__ - INFO - ✓ System execution completed successfully
+2025-07-17 21:13:45,334 - __main__ - INFO - Cleaning up system resources...
+2025-07-17 21:13:45,334 - __main__ - INFO - ✓ Cleanup completed
+2025-07-17 21:13:55,840 - test_logger - INFO - Test log message
+2025-07-17 21:13:55,840 - data.storage - INFO - Database initialized successfully
+2025-07-17 21:13:55,841 - brokers.zerodha_broker - INFO - Zerodha broker initialized in demo mode
+2025-07-17 21:13:55,841 - brokers.zerodha_broker - INFO - Connecting to Zerodha API...
+2025-07-17 21:13:55,841 - brokers.zerodha_broker - INFO - Running in DEMO mode - using mock broker
+2025-07-17 21:13:55,864 - data.market_data - INFO - Current price for RELIANCE: 1476.4
+2025-07-17 21:13:56,042 - data.market_data - INFO - Current price for TCS: 3209.2
+2025-07-17 21:15:57,116 - data.storage - INFO - Database initialized successfully
+2025-07-17 21:15:57,116 - brokers.zerodha_broker - INFO - Zerodha broker initialized in demo mode
+2025-07-17 21:15:57,116 - brokers.zerodha_broker - INFO - Connecting to Zerodha API...
+2025-07-17 21:15:57,116 - brokers.zerodha_broker - INFO - Running in DEMO mode - using mock broker
+2025-07-17 21:15:57,116 - __main__ - INFO - SIP Scheduler initialized successfully
+2025-07-17 21:15:57,116 - __main__ - INFO - Starting SIP scheduler...
+2025-07-17 21:15:57,116 - __main__ - INFO - Setting up scheduled tasks...
+2025-07-17 21:15:57,116 - __main__ - ERROR - Failed to start scheduler: 'Job' object has no attribute 'month'
+2025-07-17 21:16:23,653 - data.storage - INFO - Database initialized successfully
+2025-07-17 21:18:12,507 - __main__ - INFO - Initializing SIP Scheduler...
+2025-07-17 21:18:12,508 - data.storage - INFO - Database initialized successfully
+2025-07-17 21:18:12,508 - brokers.zerodha_broker - INFO - Zerodha broker initialized in demo mode
+2025-07-17 21:18:12,508 - brokers.zerodha_broker - INFO - Connecting to Zerodha API...
+2025-07-17 21:18:12,508 - brokers.zerodha_broker - INFO - Running in DEMO mode - using mock broker
+2025-07-17 21:18:12,508 - __main__ - INFO - SIP Scheduler initialized successfully
+2025-07-17 21:18:12,508 - __main__ - INFO - Starting SIP scheduler...
+2025-07-17 21:18:12,508 - __main__ - INFO - Setting up scheduled tasks...
+2025-07-17 21:18:12,509 - __main__ - INFO - Scheduled tasks configured successfully
+2025-07-17 21:18:12,509 - __main__ - INFO - Schedule summary:
+2025-07-17 21:18:12,509 - __main__ - INFO -   - Market data update: Every 30 minutes
+2025-07-17 21:18:12,509 - __main__ - INFO -   - Monthly SIP check: Daily at 10:00 AM and 2:00 PM
+2025-07-17 21:18:12,509 - __main__ - INFO -   - Order monitoring: Every 5 minutes
+2025-07-17 21:18:12,509 - __main__ - INFO -   - Daily data update: 9:00 AM
+2025-07-17 21:18:12,509 - __main__ - INFO - Scheduler is running. Press Ctrl+C to stop.
+2025-07-17 21:18:12,509 - __main__ - INFO - Next scheduled tasks:
+2025-07-17 21:18:12,509 - __main__ - INFO -   - Job(interval=30, unit=minutes, do=update_market_data, args=(), kwargs={})
+2025-07-17 21:18:12,509 - __main__ - INFO -   - Job(interval=1, unit=days, do=check_monthly_sip, args=(), kwargs={})
+2025-07-17 21:18:12,509 - __main__ - INFO -   - Job(interval=5, unit=minutes, do=monitor_orders, args=(), kwargs={})
+2025-07-17 21:18:12,509 - __main__ - INFO -   - Job(interval=1, unit=days, do=daily_market_data_update, args=(), kwargs={})
+2025-07-17 21:18:12,509 - __main__ - INFO -   - Job(interval=1, unit=days, do=check_monthly_sip, args=(), kwargs={})
+2025-07-17 21:18:39,688 - __main__ - INFO - Scheduler stopped by user
+2025-07-17 21:24:45,447 - test_logger - INFO - Test log message
+2025-07-17 21:24:45,447 - data.storage - INFO - Database initialized successfully
+2025-07-17 21:24:45,447 - brokers.zerodha_broker - INFO - Zerodha broker initialized in demo mode
+2025-07-17 21:24:45,447 - brokers.zerodha_broker - INFO - Connecting to Zerodha API...
+2025-07-17 21:24:45,447 - brokers.zerodha_broker - INFO - Running in DEMO mode - using mock broker
+2025-07-17 21:24:45,509 - data.market_data - INFO - Current price for RELIANCE: 1476.4
+2025-07-17 21:24:45,681 - data.market_data - INFO - Current price for TCS: 3209.2
+2025-07-17 21:24:51,445 - __main__ - INFO - ============================================================
+2025-07-17 21:24:51,445 - __main__ - INFO - SIP Algorithmic Trading System - Starting Up
+2025-07-17 21:24:51,445 - __main__ - INFO - ============================================================
+2025-07-17 21:24:51,445 - __main__ - INFO - Initializing database...
+2025-07-17 21:24:51,446 - data.storage - INFO - Database initialized successfully
+2025-07-17 21:24:51,446 - __main__ - INFO - ✓ Database initialized successfully
+2025-07-17 21:24:51,446 - __main__ - INFO - Initializing market data provider...
+2025-07-17 21:24:51,446 - __main__ - INFO - ✓ Market data provider initialized
+2025-07-17 21:24:51,446 - __main__ - INFO - Initializing broker connection...
+2025-07-17 21:24:51,446 - brokers.zerodha_broker - INFO - Zerodha broker initialized in demo mode
+2025-07-17 21:24:51,446 - brokers.zerodha_broker - INFO - Connecting to Zerodha API...
+2025-07-17 21:24:51,447 - brokers.zerodha_broker - INFO - Running in DEMO mode - using mock broker
+2025-07-17 21:24:51,447 - __main__ - INFO - ✓ Broker connected successfully
+2025-07-17 21:24:51,447 - __main__ - INFO - Initializing order manager...
+2025-07-17 21:24:51,447 - __main__ - INFO - ✓ Order manager initialized
+2025-07-17 21:24:51,447 - __main__ - INFO - Account balance: ₹100000.00
+2025-07-17 21:24:51,447 - __main__ - INFO - Current positions: 2
+2025-07-17 21:24:51,447 - __main__ - INFO - ✓ System initialization completed successfully
+2025-07-17 21:24:51,447 - __main__ - INFO - Running in demonstration mode...
+2025-07-17 21:24:51,447 - __main__ - INFO - Updating market data for 3 symbols...
+2025-07-17 21:24:51,447 - __main__ - INFO - Fetching data for NIFTY50...
+2025-07-17 21:24:52,165 - data.storage - INFO - Stored 5 records for NIFTY50
+2025-07-17 21:24:52,165 - data.market_data - INFO - Fetched 5 records for NIFTY50
+2025-07-17 21:24:52,166 - __main__ - INFO - ✓ Updated 5 records for NIFTY50
+2025-07-17 21:24:52,671 - __main__ - INFO - Fetching data for RELIANCE...
+2025-07-17 21:24:52,835 - data.storage - INFO - Stored 5 records for RELIANCE
+2025-07-17 21:24:52,836 - data.market_data - INFO - Fetched 5 records for RELIANCE
+2025-07-17 21:24:52,836 - __main__ - INFO - ✓ Updated 5 records for RELIANCE
+2025-07-17 21:24:53,341 - __main__ - INFO - Fetching data for TCS...
+2025-07-17 21:24:53,473 - data.storage - INFO - Stored 5 records for TCS
+2025-07-17 21:24:53,473 - data.market_data - INFO - Fetched 5 records for TCS
+2025-07-17 21:24:53,473 - __main__ - INFO - ✓ Updated 5 records for TCS
+2025-07-17 21:24:53,974 - __main__ - INFO - ✓ Market data update completed
+2025-07-17 21:24:53,975 - __main__ - INFO - Fetching current prices for 3 symbols...
+2025-07-17 21:24:54,242 - data.market_data - INFO - Current price for NIFTY50: 25111.45
+2025-07-17 21:24:54,612 - data.market_data - INFO - Current price for RELIANCE: 1476.4
+2025-07-17 21:24:54,996 - data.market_data - INFO - Current price for TCS: 3209.2
+2025-07-17 21:24:55,102 - __main__ - INFO -   NIFTY50: ₹25111.45
+2025-07-17 21:24:55,102 - __main__ - INFO -   RELIANCE: ₹1476.40
+2025-07-17 21:24:55,102 - __main__ - INFO -   TCS: ₹3209.20
+2025-07-17 21:24:55,103 - __main__ - INFO - Executing SIP strategy...
+2025-07-17 21:24:55,103 - __main__ - INFO - Market is closed, skipping SIP execution
+2025-07-17 21:24:55,103 - __main__ - INFO - Portfolio Summary:
+2025-07-17 21:24:55,103 - __main__ - INFO - ----------------------------------------
+2025-07-17 21:24:55,104 - __main__ - INFO - Cash Balance: ₹100000.00
+2025-07-17 21:24:55,104 - __main__ - INFO - Used Margin: ₹25000.00
+2025-07-17 21:24:55,104 - __main__ - INFO - Holdings: 2 positions
+2025-07-17 21:24:55,104 - __main__ - INFO -   {'symbol': 'RELIANCE', 'quantity': 10, 'average_price': 2650.0, 'current_price': 2680.0, 'pnl': 300.0}
+2025-07-17 21:24:55,104 - __main__ - INFO -   {'symbol': 'TCS', 'quantity': 5, 'average_price': 3500.0, 'current_price': 3520.0, 'pnl': 100.0}
+2025-07-17 21:24:55,104 - __main__ - INFO - No active orders
+2025-07-17 21:24:55,104 - __main__ - INFO - ✓ System execution completed successfully
+2025-07-17 21:24:55,104 - __main__ - INFO - Cleaning up system resources...
+2025-07-17 21:24:55,105 - __main__ - INFO - ✓ Cleanup completed
+2025-07-17 21:25:01,239 - __main__ - INFO - Initializing SIP Scheduler...
+2025-07-17 21:25:01,240 - data.storage - INFO - Database initialized successfully
+2025-07-17 21:25:01,240 - brokers.zerodha_broker - INFO - Zerodha broker initialized in demo mode
+2025-07-17 21:25:01,240 - brokers.zerodha_broker - INFO - Connecting to Zerodha API...
+2025-07-17 21:25:01,240 - brokers.zerodha_broker - INFO - Running in DEMO mode - using mock broker
+2025-07-17 21:25:01,240 - __main__ - INFO - SIP Scheduler initialized successfully
+2025-07-17 21:25:01,240 - __main__ - INFO - Running scheduler tasks once...
+2025-07-17 21:25:01,240 - __main__ - INFO - Testing market data update...
+2025-07-17 21:25:01,240 - __main__ - INFO - Updating market data...
+2025-07-17 21:25:01,682 - data.storage - INFO - Stored 5 records for NIFTY50
+2025-07-17 21:25:01,682 - data.market_data - INFO - Fetched 5 records for NIFTY50
+2025-07-17 21:25:01,683 - data.market_data - INFO - Updated market data for NIFTY50
+2025-07-17 21:25:02,335 - data.storage - INFO - Stored 5 records for RELIANCE
+2025-07-17 21:25:02,335 - data.market_data - INFO - Fetched 5 records for RELIANCE
+2025-07-17 21:25:02,335 - data.market_data - INFO - Updated market data for RELIANCE
+2025-07-17 21:25:02,985 - data.storage - INFO - Stored 5 records for TCS
+2025-07-17 21:25:02,986 - data.market_data - INFO - Fetched 5 records for TCS
+2025-07-17 21:25:02,986 - data.market_data - INFO - Updated market data for TCS
+2025-07-17 21:25:03,755 - data.storage - INFO - Stored 5 records for HDFCBANK
+2025-07-17 21:25:03,755 - data.market_data - INFO - Fetched 5 records for HDFCBANK
+2025-07-17 21:25:03,755 - data.market_data - INFO - Updated market data for HDFCBANK
+2025-07-17 21:25:04,523 - data.storage - INFO - Stored 5 records for INFY
+2025-07-17 21:25:04,523 - data.market_data - INFO - Fetched 5 records for INFY
+2025-07-17 21:25:04,523 - data.market_data - INFO - Updated market data for INFY
+2025-07-17 21:25:05,027 - __main__ - INFO - Market data updated successfully
+2025-07-17 21:25:05,028 - __main__ - INFO - Testing order monitoring...
+2025-07-17 21:25:05,028 - __main__ - INFO - Testing monthly SIP check...
+2025-07-17 21:25:05,029 - __main__ - INFO - Today is the 17th, monthly SIP will run on the 1st
+2025-07-17 21:25:05,029 - __main__ - INFO - Force executing monthly SIP for testing...
+2025-07-17 21:25:05,029 - __main__ - ERROR - Error in scheduler test: can't set attributes of built-in/extension type 'datetime.datetime'
+2025-07-17 21:26:14,075 - data.storage - INFO - Database initialized successfully
+2025-07-17 21:28:43,444 - __main__ - INFO - Initializing SIP Scheduler...
+2025-07-17 21:28:43,445 - data.storage - INFO - Database initialized successfully
+2025-07-17 21:28:43,445 - brokers.zerodha_broker - INFO - Zerodha broker initialized in demo mode
+2025-07-17 21:28:43,445 - brokers.zerodha_broker - INFO - Connecting to Zerodha API...
+2025-07-17 21:28:43,445 - brokers.zerodha_broker - INFO - Running in DEMO mode - using mock broker
+2025-07-17 21:28:43,445 - __main__ - INFO - SIP Scheduler initialized successfully
+2025-07-17 21:28:43,445 - __main__ - INFO - Running scheduler tasks once...
+2025-07-17 21:28:43,445 - __main__ - INFO - Testing market data update...
+2025-07-17 21:28:43,445 - __main__ - INFO - Updating market data...
+2025-07-17 21:28:43,985 - data.storage - INFO - Stored 5 records for NIFTY50
+2025-07-17 21:28:43,985 - data.market_data - INFO - Fetched 5 records for NIFTY50
+2025-07-17 21:28:43,985 - data.market_data - INFO - Updated market data for NIFTY50
+2025-07-17 21:28:44,626 - data.storage - INFO - Stored 5 records for RELIANCE
+2025-07-17 21:28:44,626 - data.market_data - INFO - Fetched 5 records for RELIANCE
+2025-07-17 21:28:44,626 - data.market_data - INFO - Updated market data for RELIANCE
+2025-07-17 21:28:45,324 - data.storage - INFO - Stored 5 records for TCS
+2025-07-17 21:28:45,324 - data.market_data - INFO - Fetched 5 records for TCS
+2025-07-17 21:28:45,324 - data.market_data - INFO - Updated market data for TCS
+2025-07-17 21:28:45,962 - data.storage - INFO - Stored 5 records for HDFCBANK
+2025-07-17 21:28:45,962 - data.market_data - INFO - Fetched 5 records for HDFCBANK
+2025-07-17 21:28:45,962 - data.market_data - INFO - Updated market data for HDFCBANK
+2025-07-17 21:28:46,594 - data.storage - INFO - Stored 5 records for INFY
+2025-07-17 21:28:46,595 - data.market_data - INFO - Fetched 5 records for INFY
+2025-07-17 21:28:46,595 - data.market_data - INFO - Updated market data for INFY
+2025-07-17 21:28:47,100 - __main__ - INFO - Market data updated successfully
+2025-07-17 21:28:47,100 - __main__ - INFO - Testing order monitoring...
+2025-07-17 21:28:47,100 - __main__ - INFO - Testing monthly SIP execution...
+2025-07-17 21:28:47,101 - __main__ - INFO - Today is the 17th of the month
+2025-07-17 21:28:47,101 - __main__ - INFO - In normal operation, SIP would execute on the 1st
+2025-07-17 21:28:47,101 - __main__ - INFO - For testing purposes, executing SIP now...
+2025-07-17 21:28:47,101 - __main__ - INFO - Executing monthly SIP...
+2025-07-17 21:28:47,423 - data.market_data - INFO - Current price for NIFTY50: 25111.45
+2025-07-17 21:28:47,768 - data.market_data - INFO - Current price for RELIANCE: 1476.4
+2025-07-17 21:28:48,114 - data.market_data - INFO - Current price for TCS: 3209.2
+2025-07-17 21:28:48,221 - data.storage - INFO - Stored order ad103038-df4d-46e3-870b-29887ed2000a
+2025-07-17 21:28:48,222 - brokers.zerodha_broker - INFO - DEMO: Placing MARKET order for RELIANCE
+2025-07-17 21:28:48,222 - brokers.zerodha_broker - INFO - Order placed successfully: ad103038-df4d-46e3-870b-29887ed2000a (DEMO)
+2025-07-17 21:28:48,222 - orders.order_manager - INFO - Market order placed: ad103038-df4d-46e3-870b-29887ed2000a
+2025-07-17 21:28:48,222 - __main__ - INFO - SIP order placed for RELIANCE: 1 units, Amount: ₹2500.00
+2025-07-17 21:28:48,222 - __main__ - INFO - Monthly SIP execution completed. 1 orders placed.
+2025-07-17 21:28:48,222 - __main__ - INFO - Scheduler test completed successfully

@@ -1,160 +1,68 @@
-from fastapi import FastAPI, HTTPException
-from fastapi.middleware.cors import CORSMiddleware
-from pydantic import BaseModel
-from typing import List, Dict, Any, Optional
-import logging
-from datetime import datetime, timedelta
-import sys
-import os
+# web_api.py
 
-# Add project root to Python path
-sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
+from flask import Flask, request, jsonify
+from flask_jwt_extended import JWTManager, create_access_token, jwt_required
 
-from config.settings import settings
-from data.storage import DatabaseManager
-from data.market_data import MarketDataProvider
-from brokers.zerodha_broker import ZerodhaBroker
-from orders.order_manager import OrderManager
-from utils.helpers import setup_logging
+app = Flask(__name__)
 
-# Setup logging
-setup_logging()
-logger = logging.getLogger(__name__)
+# Configure JWT
+app.config['JWT_SECRET_KEY'] = 'your_jwt_secret_key'
+jwt = JWTManager(app)
 
-app = FastAPI(title="SIP Algorithmic Trading API", version="1.0.0")
+# Sample database (replace with your actual database)
+users = {}
+portfolios = {}
+orders = {}
 
-# Add CORS middleware
-app.add_middleware(
-    CORSMiddleware,
-    allow_origins=["*"],
-    allow_credentials=True,
-    allow_methods=["*"],
-    allow_headers=["*"],
-)
+# User registration
+@app.route('/register', methods=['POST'])
+def register():
+    username = request.json.get('username')
+    password = request.json.get('password')
+    users[username] = password  # Store user (ensure to hash password in production)
+    return jsonify(message="User registered successfully"), 201
 
-# Initialize components
-db_manager = DatabaseManager()
-market_data = MarketDataProvider(db_manager)
+# User login
+@app.route('/login', methods=['POST'])
+def login():
+    username = request.json.get('username')
+    password = request.json.get('password')
+    if users.get(username) == password:  # Validate user (check hashed password in production)
+        access_token = create_access_token(identity=username)
+        return jsonify(access_token=access_token), 200
+    return jsonify(message="Invalid credentials"), 401
 
-# Pydantic models
-class OrderRequest(BaseModel):
-    symbol: str
-    side: str  # 'BUY' or 'SELL'
-    quantity: int
-    order_type: str  # 'MARKET' or 'LIMIT'
-    price: Optional[float] = None
+# Multi-user portfolio management
+@app.route('/portfolio', methods=['POST'])
+@jwt_required()
+def create_portfolio():
+    username = get_jwt_identity()
+    portfolio_data = request.json.get('portfolio_data')
+    portfolios[username] = portfolio_data  # Save portfolio data
+    return jsonify(message="Portfolio created successfully"), 201
 
-class SIPConfig(BaseModel):
-    name: str
-    symbols: List[str]
-    allocation: List[float]
-    total_amount: float
-    frequency: str
+@app.route('/portfolio', methods=['GET'])
+@jwt_required()
+def get_portfolio():
+    username = get_jwt_identity()
+    return jsonify(portfolio=portfolios.get(username, {})), 200
 
-@app.get("/")
-async def root():
-    """Root endpoint"""
-    return {"message": "SIP Algorithmic Trading System API", "version": "1.0.0"}
+# Order placement
+@app.route('/order', methods=['POST'])
+@jwt_required()
+def place_order():
+    username = get_jwt_identity()
+    order_data = request.json.get('order_data')
+    orders[username] = orders.get(username, []) + [order_data]  # Save order
+    return jsonify(message="Order placed successfully"), 201
 
-@app.get("/health")
-async def health_check():
-    """Health check endpoint"""
-    return {"status": "healthy", "timestamp": datetime.now().isoformat()}
+# SaaS Subscription
+@app.route('/subscribe', methods=['POST'])
+@jwt_required()
+def subscribe():
+    username = get_jwt_identity()
+    # Subscription logic here
+    return jsonify(message="Subscribed successfully"), 200
 
-@app.get("/market-data/{symbol}")
-async def get_market_data(symbol: str, days: int = 30):
-    """Get market data for a symbol"""
-    try:
-        end_date = datetime.now()
-        start_date = end_date - timedelta(days=days)
-        
-        data = db_manager.get_market_data(symbol, start_date, end_date)
-        
-        if data.empty:
-            raise HTTPException(status_code=404, detail=f"No data found for symbol {symbol}")
-        
-        # Convert DataFrame to dict
-        result = {
-            "symbol": symbol,
-            "data": data.to_dict(orient="records"),
-            "count": len(data)
-        }
-        
-        return result
-        
-    except Exception as e:
-        logger.error(f"Error fetching market data: {str(e)}")
-        raise HTTPException(status_code=500, detail=str(e))
-
-@app.get("/current-price/{symbol}")
-async def get_current_price(symbol: str):
-    """Get current price for a symbol"""
-    try:
-        price = market_data.get_current_price(symbol)
-        
-        if price is None:
-            raise HTTPException(status_code=404, detail=f"Price not found for symbol {symbol}")
-        
-        return {
-            "symbol": symbol,
-            "price": price,
-            "timestamp": datetime.now().isoformat()
-        }
-        
-    except Exception as e:
-        logger.error(f"Error fetching current price: {str(e)}")
-        raise HTTPException(status_code=500, detail=str(e))
-
-@app.get("/current-prices")
-async def get_current_prices(symbols: str):
-    """Get current prices for multiple symbols"""
-    try:
-        symbol_list = symbols.split(",")
-        prices = market_data.get_multiple_prices(symbol_list)
-        
-        return {
-            "prices": prices,
-            "timestamp": datetime.now().isoformat()
-        }
-        
-    except Exception as e:
-        logger.error(f"Error fetching current prices: {str(e)}")
-        raise HTTPException(status_code=500, detail=str(e))
-
-@app.get("/portfolio")
-async def get_portfolio():
-    """Get current portfolio"""
-    try:
-        # Initialize broker
-        broker_config = {
-            'api_key': settings.broker.api_key,
-            'api_secret': settings.broker.api_secret
-        }
-        broker = ZerodhaBroker(broker_config)
-        
-        if not broker.connect():
-            raise HTTPException(status_code=500, detail="Failed to connect to broker")
-        
-        positions = broker.get_positions()
-        balance = broker.get_balance()
-        
-        return {
-            "positions": positions,
-            "balance": balance,
-            "timestamp": datetime.now().isoformat()
-        }
-        
-    except Exception as e:
-        logger.error(f"Error fetching portfolio: {str(e)}")
-        raise HTTPException(status_code=500, detail=str(e))
-
-def main():
-    """Main function to run the API"""
-    import uvicorn
-    print("Starting SIP Algorithmic Trading API...")
-    print("API Documentation: http://localhost:8000/docs")
-    print("Health Check: http://localhost:8000/health")
-    uvicorn.run(app, host="0.0.0.0", port=8000)
-
-if __name__ == "__main__":
-    main()
+if __name__ == '__main__':
+    app.run(debug=True)

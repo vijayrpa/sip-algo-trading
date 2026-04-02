@@ -1,0 +1,14 @@
+# Python virtual environments
+*.venv/
+.venv/
+
+# Database files
+*.db
+*.sqlite3
+
+# Logs
+*.log
+
+# Python bytecode
+__pycache__/
+*.pyc
